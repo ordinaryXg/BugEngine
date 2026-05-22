@@ -4,6 +4,7 @@ members = [
     "crates/age-core",
     "crates/age-agent",
     "crates/age-runtime",
+    "crates/age-export",
 ]
 
 [workspace.package]
