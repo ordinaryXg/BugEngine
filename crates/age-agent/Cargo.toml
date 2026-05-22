@@ -1,0 +1,11 @@
+[package]
+name = "age-agent"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+age-core = { path = "../age-core" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
