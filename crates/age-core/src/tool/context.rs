@@ -1,3 +1,4 @@
+use std::path::PathBuf;
 use std::sync::{Arc, RwLock};
 
 use crate::schema::ui::UiDocument;
@@ -7,6 +8,7 @@ use crate::schema::world3d::SceneDocument;
 pub struct ToolContext {
     pub scene: Arc<RwLock<SceneDocument>>,
     pub ui: Arc<RwLock<UiDocument>>,
+    pub project_root: Option<PathBuf>,
 }
 
 impl ToolContext {
@@ -14,6 +16,15 @@ impl ToolContext {
         Self {
             scene: Arc::new(RwLock::new(scene)),
             ui: Arc::new(RwLock::new(ui)),
+            project_root: None,
+        }
+    }
+
+    pub fn with_project_root(scene: SceneDocument, ui: UiDocument, project_root: PathBuf) -> Self {
+        Self {
+            scene: Arc::new(RwLock::new(scene)),
+            ui: Arc::new(RwLock::new(ui)),
+            project_root: Some(project_root),
         }
     }
 }

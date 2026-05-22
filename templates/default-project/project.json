@@ -1,0 +1,7 @@
+{
+  "name": "demo_room",
+  "version": "0.1.0",
+  "engine_version": "0.1.0",
+  "main_scene": "scenes/main.scene.json",
+  "main_ui": ["ui/hud.ui.json"]
+}

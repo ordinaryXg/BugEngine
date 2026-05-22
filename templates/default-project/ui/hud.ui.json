@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "screens": [],
+  "theme": {
+    "primary": "#4a90d9",
+    "background": "#1a1a2e",
+    "text": "#ffffff"
+  }
+}

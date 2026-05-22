@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "scene": {
+    "mode": "3d",
+    "metadata": {
+      "name": "demo_room",
+      "units": "meters"
+    },
+    "environment": {
+      "ambient": { "color": "#404050", "intensity": 0.3 },
+      "background": "#1a1a2e",
+      "skybox": null
+    },
+    "nodes": [
+      {
+        "id": "main_camera",
+        "type": "Camera3D",
+        "transform": {
+          "position": [0, 2, 5],
+          "rotation": [-15, 0, 0],
+          "scale": [1, 1, 1]
+        }
+      },
+      {
+        "id": "sun",
+        "type": "DirectionalLight",
+        "transform": {
+          "position": [0, 0, 0],
+          "rotation": [-45, 30, 0],
+          "scale": [1, 1, 1]
+        }
+      }
+    ],
+    "materials": []
+  }
+}

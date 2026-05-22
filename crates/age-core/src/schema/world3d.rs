@@ -34,6 +34,21 @@ pub struct SceneNode {
     pub components: Vec<Component>,
 }
 
+impl Default for SceneNode {
+    fn default() -> Self {
+        Self {
+            id: String::new(),
+            node_type: NodeType::MeshInstance,
+            transform: Transform::default(),
+            tags: vec![],
+            mesh: None,
+            prefab: None,
+            material: None,
+            components: vec![],
+        }
+    }
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Component {
     #[serde(rename = "type")]
